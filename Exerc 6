@@ -1,0 +1,3 @@
+def calculate_guild_perms(glorfindel, galadriel, elendil, elrond):
+    all_permissions = glorfindel | galadriel | elendil | elrond
+    return all_permissions
