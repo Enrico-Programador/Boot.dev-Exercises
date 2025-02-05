@@ -1,0 +1,29 @@
+#Usando While
+def is_prime(number):
+    i=2
+    number1 = None
+    if number == 2:
+        return True
+    elif number>1:
+        while i<4:
+            number1 = number%i
+            if number1==0:
+                i=4
+            else:
+                i = i+1
+    else:
+        return False
+            
+    if number1 == 0:
+        return False
+    else:
+        return True
+    
+#Usando For
+def is_prime(number):
+    if number < 2:
+        return False
+    for i in range(2, number):
+        if number % i == 0:
+            return False
+    return True

@@ -1,0 +1,6 @@
+def calculate_experience_points(level):
+    total_xp = level * 5
+    for i in range(0,total_xp,5):
+        xp = level * (i/2)          
+
+    return xp
