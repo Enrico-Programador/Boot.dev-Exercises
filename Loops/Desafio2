@@ -1,0 +1,8 @@
+def meditate(mana, max_mana, energy, energy_drinks):
+    while mana<max_mana and (energy>0 or energy_drinks>0):
+        if energy == 0 and energy_drinks>0 and mana<max_mana:
+            energy = energy + 50
+            energy_drinks = energy_drinks - 1
+        energy = energy - 1
+        mana = mana + 1
+    return mana, energy, energy_drinks
