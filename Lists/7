@@ -1,0 +1,18 @@
+def reverse_array(items):
+    smeti = None
+    items2 = []
+    if len(items) != 0:
+        for i in range(0,len(items)):
+            smeti = items.pop()
+            items2.append(smeti)
+        return items2
+    else:
+        return items
+
+        #ou
+
+def reverse_array(items):
+    new_array = []
+    for i in range(len(items) - 1, -1, -1):
+        new_array.append(items[i])
+    return new_array
