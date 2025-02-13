@@ -1,0 +1,8 @@
+def validate_path(expected_path, character_path):
+    character_name = character_path.pop(0)
+    counter = 0
+    for i in range(0,len(expected_path)):
+        if expected_path[i] == character_path[i]:
+            counter += 1
+    percent = (counter*100)/len(expected_path)
+    return character_name, percent
