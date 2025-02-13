@@ -1,0 +1,18 @@
+def check_ingredient_match(recipe, ingredients):
+    counter = 0
+    percent = 0
+    missing = []
+    for recipes in recipe:
+        check = False
+        for ingredient in ingredients:
+            if ingredient == recipes:
+                counter += 1
+                check = True
+                break
+                
+        if check == False:
+            missing.append(recipes)
+                
+    percent = (counter * 100)/len(recipe)
+    print(percent)
+    return percent, missing
