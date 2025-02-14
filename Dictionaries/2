@@ -1,0 +1,13 @@
+def merge(dict1, dict2):
+    dict_final = {}
+    for words in dict1:
+        dict_final[words] = dict1[words]
+    for words in dict2:
+        dict_final[words] = dict2[words]
+    return dict_final
+    
+def total_score(score_dict):
+    score = 0
+    for words in score_dict:
+        score = score + score_dict[words]
+    return score

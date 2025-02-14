@@ -1,0 +1,35 @@
+def calculate_total(items_purchased, pinned_list):
+    item_prices = {
+        "health_potion": 10.00,
+        "mana_potion": 12.00,
+        "gold_dust": 5.00,
+        "dwarven_ale": 8.00,
+        "enchanted_scroll": 25.00,
+        "ice_cold_milk": 50.00,
+        "herbs": 7.00,
+        "crystal_shard": 20.00,
+        "magic_ring": 100.00,
+        "mystic_amulet": 150.00,
+    }
+
+    # Don't touch above this line
+    dict_purchased = {}
+    dict_pinned = {}
+    final_pinned = []
+    total_cost = 0
+
+    for items in items_purchased:
+        dict_purchased[items] = items
+        dict_purchased[items] = item_prices[items]
+        total_cost = total_cost + dict_purchased[items]
+        
+    for items in pinned_list:
+        dict_pinned[items] = items
+        
+    for items in dict_pinned:
+        is_present = items in dict_purchased
+        print(is_present)
+        if is_present == False:
+            final_pinned.append(items)
+
+    return final_pinned, dict_purchased, total_cost
