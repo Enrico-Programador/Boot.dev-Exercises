@@ -1,0 +1,22 @@
+def count_vowels(text):
+    vowels = {"a", "e", "i", "o", "u", "A", "E", "I", "O", "U"}
+    count = 0
+    unique = set()
+    for char in text:
+        if char in vowels:
+            count += 1
+            unique.add(char)
+    return count, unique
+
+#ou
+
+def count_vowels(text):
+    print(text)
+    vowels = set("")
+    counter = 0
+    for vowel in text:
+        if vowel == "A" or vowel == "a" or vowel == "E" or vowel == "e" or vowel == "I" or vowel == "i" or vowel == "O" or vowel == "o" or vowel == "U" or vowel == "u":
+            vowels.add(vowel)       
+            counter += 1
+        
+    return counter, vowels
