@@ -1,0 +1,8 @@
+def join_strings(strings):
+    result = ""
+    for i in range(0,len(strings)):
+        if i == len(strings)-1:
+            result = result + strings[i]
+        else:
+            result = result + strings[i] + ","
+    return result
