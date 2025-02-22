@@ -1,6 +1,0 @@
-def remove_duplicates(lst):
-    print(lst)
-    john = set("")
-    for spell in lst:
-        john.add(spell)
-    return john

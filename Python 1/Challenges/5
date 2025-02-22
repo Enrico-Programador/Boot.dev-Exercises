@@ -1,0 +1,6 @@
+def area_sum(rectangles):
+    y = 0
+    for i in range(0,len(rectangles)):
+        x = rectangles[i]["height"] * rectangles[i]["width"]
+        y = y + x
+    return y
